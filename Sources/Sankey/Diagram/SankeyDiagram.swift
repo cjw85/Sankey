@@ -32,7 +32,7 @@ public struct SankeyDiagram: UIViewRepresentable {
         Coordinator(parent: self)
     }
     
-    @State private var webView: WKWebView?
+    @State public var webView: WKWebView?
 
     public func makeUIView(context: Context) -> WKWebView {
         let contentController = WKUserContentController()
