@@ -7,7 +7,7 @@ public struct SankeyDiagram: UIViewRepresentable {
     public let data: [SankeyLink]
     public let options: SankeyOptions
 
-    @State private var isChartInitialized = false
+    @State public var isChartInitialized = false
 
     public class Coordinator: NSObject, WKScriptMessageHandler {
         var parent: SankeyDiagram
